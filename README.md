@@ -1,7 +1,7 @@
 What is this?
 =============
 
-This is a tiny Python script for remapping scancodes of USB keyboard on MacOS >= 10.12(Sierra).
+This is a tiny Python script for remapping scancodes(UsageID) of USB keyboard on MacOS >= 10.12(Sierra).
 
 The hardcoded remapping is tailored for the Emacs users on Japanese MacBooks.
 The Japanese keyboard may be useful for non-Japanese programmers too because it has
@@ -21,7 +21,7 @@ $ ./remap.py --reset
 
 # Note
 
-The definition of remaps is hardcoded into code; please feel free to generalize it as you wish.
+The definition of remaps is hardcoded; please feel free to generalize it as you wish.
 
 The hardcoded maps may be useful for you if:
 + you are an Emacs user on a MacBook with the Japanese keyboard
