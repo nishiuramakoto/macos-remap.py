@@ -18,7 +18,7 @@ def remap():
                    remap_a_key(k['Kana']        , k['RightControl']),
                    remap_a_key(k['RightCommand'], k['RightOption']),
                    remap_a_key(k['Yen']         , k['Tilde']),
-                   remap_a_key(k['_']           , k['Esc'])
+                   remap_a_key(k['_']           , k['RightCommand'])
     ])
 
 # See usbkeycode.md    
