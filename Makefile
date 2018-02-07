@@ -1,5 +1,5 @@
 
-SCPT= scroll-them-down.scpt scroll-them-up.scpt test.scpt test-run.scpt
+SCPT= scroll-them-down.scpt scroll-them-up.scpt # test.scpt test-run.scpt
 
 
 all : $(SCPT)
@@ -10,3 +10,6 @@ all : $(SCPT)
 
 test : $(SCPT)
 	osascript test.applescript
+
+install : $(SCPT)
+	mkdir -p ~/Scripts && install $(SCPT)  ~/Scripts
