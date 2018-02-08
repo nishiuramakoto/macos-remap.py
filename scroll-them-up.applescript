@@ -4,8 +4,14 @@ on test()
     display dialog "scroll-them-up"
 end test
 
-
 on run {input, parameters}
+    tell script "sendKey"
+        sendKeyToNonActiveWindows(116)
+    end tell
+end run
+
+
+on run_static {input, parameters}
 
     set keyCode to 116  -- fn + up
     try
@@ -43,4 +49,4 @@ on run {input, parameters}
         error errStr number errorNumber
     end try
 
-end run
+end run_static

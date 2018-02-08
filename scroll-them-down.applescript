@@ -5,6 +5,12 @@ on test()
 end test
 
 on run {input, parameters}
+    tell script "sendKey"
+        sendKeyToNonActiveWindows(121)
+    end tell
+end run
+
+on run_static {input, parameters}
     set keyCode to 121  -- fn + down
     try
         set homeFolder to path to home folder as string
@@ -41,4 +47,4 @@ on run {input, parameters}
         error errStr number errorNumber
     end try
 
-end run
+end run_static
