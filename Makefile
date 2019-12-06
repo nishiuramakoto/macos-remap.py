@@ -3,7 +3,9 @@ APPLESCRIPTS = list-windows.applescript
 LIB  = list-windows.applescript scroll-them-down.applescript scroll-them-up.applescript sendKey.applescript
 SCPT = $(patsubst %.applescript,%.scpt,$(LIB))
 
-all : $(SCPT)
+.PHONY: all
+all : $(SCPT) remap.py
+	python remap.py
 
 %.scpt : %.applescript
 	osacompile -o $@ $^
